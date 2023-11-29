@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <title>Колесо Удачи</title>
+    <script type="module" crossorigin src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+        </header>
+        <main class="main">
+            <div class="main__container">
+                <div class="spin-wrapper">
+                    <div class="deal-wheel-wrapper">
+                        <div class="deal-wheel">
+                            <ul class="spinner">
+                            </ul>
+                            <div class="ticker">
+                                <div class="ticker-border"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-wrapper">
+                        <h1 class="info-title">Выгодно, как ни крути!</h1>
+                        <button type="submit" class="button btn-spin">Вращать колесо</button>
+                    </div>
+                    <div class="info">
+                        <div class="info-wrapper">
+                            <h1 class="info-title">Поздравляем! Вы выиграли</h1>
+                            <div class="prize-info"></div>
+                            <h2 class="info-subtitle">Введите номер вашего телефона, чтобы забрать подарок
+                            </h2>
+                        </div>
+                        <form class="form" action="mail.php" method="POST">
+                            <div class="form-group">
+                                <input class="form__input" type="text" id="phone" name="user__phone"
+                                    placeholder="Ваш номер телефона">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="prize__input" name="user__gift" value="" />
+                                <button type="submit" class="button">Забрать подарок</button>
+                            </div>
+                            <div class="checkbox">
+                                <label class="checkbox__label">
+                                    <input class="checkbox__input consent_check-js" type="checkbox">
+                                    <span class="checkbox__content">
+                                        Согласен с <a href="#" class="link">правилами акции</a>
+                                    </span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </main>
+        <footer class="footer">
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+        type="text/javascript"></script>
+</body>
+
+</html>
